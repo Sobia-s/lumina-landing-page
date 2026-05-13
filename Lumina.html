@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina: A Complete Personal Portfolio System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Lumina.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">Lumina</div>
+      <ul class="nav-links">
+        <li><a href="#why">Why Lumina</a></li>
+        <li><a href="#system">The System</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a
+            href="https://react-portfolio-template-indol.vercel.app/"
+            target="_blank"
+            >Live Demo</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="nav-cta"
+            >Get Template</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg-orb orb-a"></div>
+      <div class="hero-bg-orb orb-b"></div>
+      <div class="hero-bg-orb orb-c"></div>
+      <div class="hero-inner">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Lumina: ReactJS Personal Portfolio System Template
+        </div>
+        <h1>
+          Not just a portfolio.<br />
+          <span class="line2"><em>A complete system.</em></span>
+        </h1>
+        <p class="hero-reframe">
+          Structure · Flow · System Thinking — AI can't do this for you.
+        </p>
+        <p class="hero-sub">
+          Lumina is built for developers who want more than a pretty layout.<br />
+          <strong
+            >Config-driven. Fully responsive. Launch-ready in one day.</strong
+          >
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-primary"
+            >Get Lumina</a
+          >
+          <a
+            href="https://react-portfolio-template-indol.vercel.app/"
+            target="_blank"
+            class="btn-ghost"
+            >View Live Demo</a
+          >
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">7+</div>
+            <div class="stat-lbl">Pages Included</div>
+          </div>
+          <div>
+            <div class="stat-num">12</div>
+            <div class="stat-lbl">Config Files</div>
+          </div>
+          <div>
+            <div class="stat-num">2</div>
+            <div class="stat-lbl">Theme Modes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEW RIBBON -->
+    <div class="review-ribbon">
+      <div class="review-inner">
+        <div class="review-label-col">
+          <div class="big-num">★ 5.0</div>
+          <p>Verified Developer<br />Review</p>
+        </div>
+        <div>
+          <div class="review-badge">
+            What a developer said after using Lumina
+          </div>
+          <div class="review-stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <p class="review-quote">
+            Lumina is a polished, thoughtfully structured React portfolio
+            template. The layout is clean, components are reusable, theming is
+            handled with CSS variables, and animations are tastefully
+            encapsulated. Everything feels modern and easy to extend. Routing is
+            sensible, assets are optimized, and the building blocks make
+            customization a breeze. An excellent starting point that's friendly
+            for beginners and scalable for pros.
+          </p>
+          <p class="review-author">
+            — Verified Developer ·
+            <a
+              href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/?trackingId=ChqsGk8XRICPoiimAweCMg%3D%3D"
+              target="_blank"
+              >Read full article on LinkedIn →</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHY LUMINA -->
+    <div id="why" class="reframe">
+      <div class="two-col">
+        <div>
+          <p class="section-label">The real difference</p>
+          <h2 class="section-title">
+            Most portfolios focus on pages.<br /><em
+              >Lumina focuses on systems.</em
+            >
+          </h2>
+          <p class="section-desc">
+            AI tools can generate layouts. But they can't give you structure,
+            user flow, and system thinking. That's what Lumina is built on — a
+            deliberate, professional way to present your work that guides every
+            visitor naturally from hello to hire.
+          </p>
+        </div>
+        <div class="comparison-cards">
+          <div class="cmp-card bad">
+            <div class="cmp-icon">❌</div>
+            <div>
+              <div class="cmp-title">A typical portfolio template</div>
+              <div class="cmp-desc">
+                Random pages, no story flow, drop your projects in and hope for
+                the best. Design decisions left to you.
+              </div>
+            </div>
+          </div>
+          <div class="cmp-card good">
+            <div class="cmp-icon">✦</div>
+            <div>
+              <div class="cmp-title">Lumina — a portfolio system</div>
+              <div class="cmp-desc">
+                Structured flow from landing → work → services → contact. Every
+                page has a purpose. Every section has a next step.
+              </div>
+            </div>
+          </div>
+          <div class="cmp-card good">
+            <div class="cmp-icon">✦</div>
+            <div>
+              <div class="cmp-title">Project stories, not just screenshots</div>
+              <div class="cmp-desc">
+                Each project follows: Preview → Challenge → Approach → Solution.
+                Your work tells a story that employers actually want to read.
+              </div>
+            </div>
+          </div>
+          <div class="cmp-card good">
+            <div class="cmp-icon">✦</div>
+            <div>
+              <div class="cmp-title">Freelancers: your whole web presence</div>
+              <div class="cmp-desc">
+                Services page connects directly to contact. This isn't just a
+                portfolio — it's how freelancers build and convert clients.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SYSTEM FLOW -->
+    <div id="system" class="system-section">
+      <div class="system-inner">
+        <div class="system-header">
+          <p class="section-label">How project details work</p>
+          <h2 class="section-title">
+            Every project tells a <em>complete story.</em>
+          </h2>
+          <p class="section-desc" style="max-width: 520px; margin: 1rem auto 0">
+            Not just screenshots. Lumina's dynamic project detail system walks
+            visitors through your actual thinking process.
+          </p>
+        </div>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <h4>Preview</h4>
+            <p>
+              Live demo link, tech stack tags, and a visual first impression.
+            </p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <h4>Challenge</h4>
+            <p>
+              What problem were you solving? Context that makes your work
+              matter.
+            </p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <h4>Approach</h4>
+            <p>
+              How you thought through it — the decisions, trade-offs, and
+              reasoning.
+            </p>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">04</div>
+            <h4>Solution</h4>
+            <p>What you built, what it does, and what impact it had.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div id="features" class="features-section">
+      <div class="features-header">
+        <p class="section-label">Everything inside</p>
+        <h2 class="section-title">
+          Built for real developer needs,<br /><em>not just aesthetics.</em>
+        </h2>
+        <p class="section-desc">
+          Every feature was chosen because it solves a real problem developers
+          face when building and launching their portfolio.
+        </p>
+      </div>
+      <div class="features-mosaic">
+        <div class="feat-card wide">
+          <div class="feat-icon">⚡</div>
+          <h4>Config-Driven Content System</h4>
+          <p>
+            12 config files control every piece of content — name, links,
+            projects, colors, social handles. Change one file, it updates
+            everywhere. No hunting through components.
+          </p>
+          <span class="feat-tag">12 config files</span>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🌙</div>
+          <h4>Eye-Friendly Dark Purple Theme</h4>
+          <p>
+            Not pure black. A calm deep purple inspired by Discord, Twitch, and
+            GitHub — reduces eye strain and looks genuinely professional.
+          </p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🔍</div>
+          <h4>Per-Page SEO (React Helmet)</h4>
+          <p>
+            Unique title and meta description on every page. 100 Lighthouse SEO
+            score. Get found when people search your name or niche.
+          </p>
+          <span class="feat-tag">100 SEO score</span>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">🚀</div>
+          <h4>Lazy Loaded Routes</h4>
+          <p>
+            Pages only load when visited. Faster initial load, better
+            performance score — without any extra work from you.
+          </p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📬</div>
+          <h4>Smart Contact Form</h4>
+          <p>
+            Full validation, whitespace detection, service dropdown. Success and
+            error feedback included. Connect Formspree or EmailJS with the
+            included instructions.
+          </p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">💼</div>
+          <h4>Categorised Project Gallery</h4>
+          <p>
+            8 pre-built projects across 4 categories — filterable by Frontend,
+            Backend, Database, Testing. Shows range without overwhelm.
+          </p>
+          <span class="feat-tag">4 categories · 8 projects</span>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon">📄</div>
+          <h4>CV Download + Social Links</h4>
+          <p>
+            One-click CV download with a PDF you control. Centralized social
+            links config — update once, they update everywhere in your site.
+          </p>
+        </div>
+        <div class="feat-card wide">
+          <div class="feat-icon">📖</div>
+          <h4>Step-by-Step Documentation</h4>
+          <p>
+            HTML + PDF docs with annotated screenshots for every customization.
+            Covers deployment to Vercel and Netlify. No guessing, no Stack
+            Overflow.
+          </p>
+          <span class="feat-tag">HTML + PDF docs included</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGES -->
+    <div class="pages-section">
+      <div class="pages-inner">
+        <div class="pages-header">
+          <div>
+            <p class="section-label">Pages included</p>
+            <h2 class="section-title">
+              Every page you need,<br /><em>nothing extra.</em>
+            </h2>
+          </div>
+          <p class="section-desc">
+            Each page is connected to the next with a clear user flow — not just
+            a collection of routes.
+          </p>
+        </div>
+        <div class="pages-grid">
+          <div class="page-card">
+            <div class="page-card-icon">🏠</div>
+            <div class="page-card-name">Home</div>
+            <div class="page-card-route">/</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">👤</div>
+            <div class="page-card-name">About</div>
+            <div class="page-card-route">/about</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">🛠️</div>
+            <div class="page-card-name">Services</div>
+            <div class="page-card-route">/services</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">💼</div>
+            <div class="page-card-name">My Work</div>
+            <div class="page-card-route">/portfolio</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">💬</div>
+            <div class="page-card-name">Testimonials</div>
+            <div class="page-card-route">/testimonial</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">📧</div>
+            <div class="page-card-name">Contact</div>
+            <div class="page-card-route">/contact</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">📖</div>
+            <div class="page-card-name">My Story</div>
+            <div class="page-card-route">/story</div>
+          </div>
+          <div class="page-card">
+            <div class="page-card-icon">🔍</div>
+            <div class="page-card-name">404 Page</div>
+            <div class="page-card-route">/*</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECH STACK -->
+    <div class="tech-section">
+      <div class="tech-inner">
+        <p class="tech-label">
+          Modern tech stack — nothing experimental, everything proven
+        </p>
+        <div class="tech-pills">
+          <span class="tech-pill">React 19</span>
+          <span class="tech-pill">React Router DOM</span>
+          <span class="tech-pill">Framer Motion</span>
+          <span class="tech-pill">React Helmet Async</span>
+          <span class="tech-pill">CSS Variables</span>
+          <span class="tech-pill">Lazy Loading</span>
+          <span class="tech-pill">React Icons</span>
+          <span class="tech-pill">Font Awesome</span>
+          <span class="tech-pill">ESLint + Prettier</span>
+          <span class="tech-pill">PWA Ready</span>
+          <span class="tech-pill">Vercel Ready</span>
+          <span class="tech-pill">Netlify Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WHO IS IT FOR -->
+    <div class="for-section">
+      <div class="for-header">
+        <p class="section-label">Who Lumina is designed for</p>
+        <h2 class="section-title">
+          Built for developers who are <em>serious</em> about their presence.
+        </h2>
+      </div>
+      <div class="for-grid">
+        <div class="for-card">
+          <div class="for-card-icon">👩‍💻</div>
+          <div>
+            <h4>Developers building their first serious portfolio</h4>
+            <p>
+              Stop starting from scratch with a blank Vite project. Lumina gives
+              you structure, design, and a system — so you can focus on your
+              content, not your layout.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">🧑‍💼</div>
+          <div>
+            <h4>Freelancers who need a reusable client system</h4>
+            <p>
+              Services connect to contact. Projects show your range. Story
+              explains your background. Everything a client needs to say yes —
+              in one structured flow.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">🎓</div>
+          <div>
+            <h4>Tech students preparing for job applications</h4>
+            <p>
+              Stand out with a portfolio that looks like a product, not a
+              tutorial project. The project detail pages alone will make you
+              look more senior than you feel.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">😤</div>
+          <div>
+            <h4>Anyone stuck on design, structure, or layout</h4>
+            <p>
+              Design decisions are already made. Structure is already built. You
+              just fill in your content and ship. No more overthinking. No more
+              blank screen paralysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESIGN PHILOSOPHY -->
+    <div class="design-section">
+      <div class="design-inner">
+        <div class="design-grid">
+          <div>
+            <p class="section-label">Design philosophy</p>
+            <h2 class="section-title">
+              Good design isn't decoration.<br /><em>It's communication.</em>
+            </h2>
+            <div class="design-points">
+              <div class="design-pt">
+                <div class="design-pt-bar"></div>
+                <div>
+                  <h5>Eye-friendly dark purple — not pure black</h5>
+                  <p>
+                    Pure black causes more eye strain with bright text. Deep
+                    purple softens contrast while keeping that premium, modern
+                    feel. The same choice made by Discord, Twitch, and GitHub.
+                  </p>
+                </div>
+              </div>
+              <div class="design-pt">
+                <div class="design-pt-bar"></div>
+                <div>
+                  <h5>Making things responsive is harder than it looks</h5>
+                  <p>
+                    Every section in Lumina is tested across screen sizes.
+                    Responsive design isn't a checkbox — it's hundreds of small
+                    layout decisions. They're all already made for you.
+                  </p>
+                </div>
+              </div>
+              <div class="design-pt">
+                <div class="design-pt-bar"></div>
+                <div>
+                  <h5>Clarity, readability, and natural user flow</h5>
+                  <p>
+                    Typography, spacing, and component hierarchy are designed to
+                    guide — not just display. Every visual decision has a reason
+                    behind it.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="theme-preview">
+            <div class="tp-bar">
+              <div class="tp-dot" style="background: #ff5f57"></div>
+              <div class="tp-dot" style="background: #febc2e"></div>
+              <div class="tp-dot" style="background: #28c840"></div>
+            </div>
+            <div class="tp-screen">
+              <div class="tp-orb"></div>
+              <div class="tp-content">
+                <p class="tp-greeting">Hi, I'm</p>
+                <div class="tp-name">Your Name</div>
+                <p class="tp-desc">
+                  Full-stack developer building scalable, responsive web
+                  applications with modern tools.
+                </p>
+                <span class="tp-btn">Download CV</span>
+                <span class="tp-btn">View Work</span>
+                <div class="tp-platforms">
+                  <div class="tp-chip">
+                    <div class="chip-dot" style="background: #5865f2"></div>
+                    Discord-inspired
+                  </div>
+                  <div class="tp-chip">
+                    <div class="chip-dot" style="background: #6e40c9"></div>
+                    GitHub-inspired
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div id="pricing" class="pricing-section">
+      <div class="pricing-bg-glow"></div>
+      <div class="pricing-inner">
+        <p class="section-label">Simple pricing</p>
+        <h2 class="section-title">
+          One price.<br /><em>Everything included.</em>
+        </h2>
+        <div class="price-card">
+          <div class="price-card-glow"></div>
+          <span class="price-tag-pill">✦ One-Time Purchase</span>
+          <div class="price-amount"><sup>$</sup>29</div>
+          <p class="price-note">
+            Pay once. Use forever. No subscriptions, no hidden costs.
+          </p>
+          <div class="price-items">
+            <div class="price-item">
+              <span class="check">✓</span>Full ReactJS source code (React 19)
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>7 pages + 404 — every page connected
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Light & dark mode (eye-friendly
+              purple)
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>12 config files — edit content, not
+              code
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>SEO ready — 100 Lighthouse SEO score
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Dynamic project detail pages
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Services page → contact flow
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Categorised project gallery (4
+              categories)
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>CV download + centralized social links
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Validated contact form with feedback
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>HTML + PDF documentation
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Email support — response within
+              24–48hrs
+            </div>
+            <div class="price-item">
+              <span class="check">✓</span>Free future updates
+            </div>
+          </div>
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-buy"
+            >Get Lumina for $29 →</a
+          >
+          <p class="price-guarantee">
+            📄 Read a real developer's full review first —
+            <a
+              href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/?trackingId=ChqsGk8XRICPoiimAweCMg%3D%3D"
+              target="_blank"
+              style="color: var(--lavender); text-decoration: none"
+              >view on LinkedIn →</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div id="faq" class="faq-section">
+      <div class="faq-header">
+        <p class="section-label">Common questions</p>
+        <h2 class="section-title">FAQ</h2>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need to know React to use Lumina?</div>
+        <p class="faq-a">
+          Basic JavaScript knowledge is enough. All content lives in config
+          files — you don't need to touch React components to customize text,
+          images, colors, or links. The docs guide you through everything.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I use Lumina for a freelance client?</div>
+        <p class="faq-a">
+          Yes — the license covers one personal or one client project. For
+          multiple client projects, purchase additional licenses. Lumina's
+          Services page + contact flow makes it a natural fit for freelance
+          sites.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How does the contact form work?</div>
+        <p class="faq-a">
+          The form includes full validation with success/error feedback. To send
+          real emails, connect Formspree or EmailJS — step-by-step instructions
+          are in the documentation.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What images are included?</div>
+        <p class="faq-a">
+          Placeholder images are included for easy replacement. The live demo
+          uses Pexels stock photos for demonstration — these are not included in
+          the purchase.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I deploy it?</div>
+        <p class="faq-a">
+          Deploy to Vercel or Netlify in minutes. The documentation includes
+          step-by-step deployment guides for both platforms — it's the fastest
+          part of the whole setup.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is support included?</div>
+        <p class="faq-a">
+          Yes — email support is included for installation help and usage
+          questions. Response within 24–48 hours on business days.
+        </p>
+      </div>
+    </div>
+
+    <!-- CTA FINAL -->
+    <div class="cta-final">
+      <div class="cta-watermark">LUMINA</div>
+      <div class="cta-inner">
+        <h2>
+          Your work deserves<br />more than a layout.<br /><em
+            >It deserves a system.</em
+          >
+        </h2>
+        <p>
+          Stop putting it off. Lumina is ready. Your next opportunity could come
+          from the portfolio you haven't shipped yet.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-primary"
+            >Get Lumina for $29 →</a
+          >
+          <a
+            href="https://react-portfolio-template-indol.vercel.app/"
+            target="_blank"
+            class="btn-ghost"
+            >↗ View Live Demo</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">Lumina</div>
+      <p class="footer-copy">
+        © 2026 Lumina by Sobia Soomro. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a
+          href="https://react-portfolio-template-indol.vercel.app/"
+          target="_blank"
+          >Live Demo</a
+        >
+        <a
+          href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+          target="_blank"
+          >Buy Now</a
+        >
+        <a href="mailto:sobiasoomro97@gmail.com">Support</a>
+      </div>
+    </footer>
+  </body>
+</html>

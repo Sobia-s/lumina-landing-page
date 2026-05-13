@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina: A Complete React Portfolio System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ═══════════════════════════════
+         NAV
+    ═══════════════════════════════ -->
+    <nav>
+      <div class="nav-logo">
+        <img src="logo.png" alt="Lumina" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#video">Demo</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a
+            href="https://react-portfolio-template-indol.vercel.app/"
+            target="_blank"
+            >Launch Your Portfolio</a
+          >
+        </li>
+      </ul>
+      <a
+        href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+        target="_blank"
+        class="nav-cta"
+        >Launch Your Portfolio</a
+      >
+    </nav>
+
+    <!-- ═══════════════════════════════
+         HERO
+    ═══════════════════════════════ -->
+    <section class="hero">
+      <div class="hero-bg-orb orb-a"></div>
+      <div class="hero-bg-orb orb-b"></div>
+      <div class="hero-inner">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Lumina: ReactJS Portfolio Template System
+        </div>
+        <h1>
+          Not just a portfolio.<br />
+          <span class="line2"><em>A complete system.</em></span>
+        </h1>
+        <p class="hero-sub">
+          <strong
+            >No design decisions. No layout stress. Just add your content and
+            launch.</strong
+          >
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-primary"
+            >Launch Your Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         VIDEO
+    ═══════════════════════════════ -->
+    <section id="video" class="video-section">
+      <div class="video-inner">
+        <h2 class="section-title">
+          See the real Lumina<br /><em>in action</em>
+        </h2>
+        <div class="video-grid">
+          <div class="video-box">
+            <p class="video-box-label">🌞 Light Mode</p>
+            <video controls>
+              <source src="Lumina.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+          </div>
+          <div class="video-box">
+            <p class="video-box-label">🌙 Dark Mode</p>
+            <video controls>
+              <source src="dark-mode.mp4" type="video/mp4" />
+              Your browser does not support video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════ -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="testimonials-inner">
+        <h2 class="section-title">
+          What developers say<br /><em>about Lumina</em>
+        </h2>
+
+        <div class="testimonials-grid">
+          <!-- Card 1 — Gumroad rating -->
+          <div class="testi-card">
+            <div class="testi-card-top">
+              <div class="testi-score-col">
+                <div class="testi-big-num">★ 5.0</div>
+                <div class="testi-platform">Gumroad<br />Rating</div>
+              </div>
+              <div class="testi-stars">
+                <span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+            <p class="testi-quote">
+              Lumina is a polished, thoughtfully structured React portfolio
+              template. The layout is clean, components are reusable, theming is
+              handled with CSS variables, and animations are tastefully
+              encapsulated. Everything feels modern and easy to extend. Routing
+              is sensible, assets are optimized, and the building blocks
+              (Buttons, Cards, Section headers) make customization a breeze.
+              Overall, an excellent starting point that's friendly for beginners
+              and scalable for pros.
+            </p>
+            <div class="testi-author">
+              <img
+                src="Screenshot (306).png"
+                alt="Olivia Wilcox"
+                class="testi-avatar"
+              />
+              <div class="testi-author-info">
+                <span class="testi-name">Olivia Wilcox</span>
+                <span class="testi-role">Founder & Senior SRE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 — LinkedIn article -->
+          <div class="testi-card testi-card-article">
+            <div class="testi-article-badge">📝 Full LinkedIn Article</div>
+            <p class="testi-quote">
+              Lighting the Way for Developers: Inside Lumina, a New Kind of
+              Portfolio Template.
+              <br />
+              Lumina’s structure reflects that intention. Each section guides
+              the reader naturally from who you are, what you build, and how you
+              approach your craft.
+              <br />
+              Lumina is built with React and organized around components that
+              are simple to understand and modify. The ThemeContext powers light
+              and dark modes and keeps color choices consistent throughout the
+              site.
+            </p>
+            <div class="testi-author">
+              <img
+                src="Screenshot (306).png"
+                alt="Olivia Wilcox"
+                class="testi-avatar"
+              />
+              <div class="testi-author-info">
+                <span class="testi-name">Olivia Wilcox</span>
+                <span class="testi-role">Founder & Senior SRE</span>
+                <a
+                  href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/?trackingId=ChqsGk8XRICPoiimAweCMg%3D%3D"
+                  target="_blank"
+                  class="testi-link"
+                  >Read full article on LinkedIn →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         IMAGE OVERLAY + BENEFITS
+═══════════════════════════════ -->
+    <section class="benefits-section">
+      <div class="benefits-overlay">
+        <img
+          src="pic.png"
+          alt="Lumina portfolio preview"
+          class="benefits-bg-img"
+        />
+
+        <div class="benefits-overlay-tint"></div>
+
+        <div class="benefits-content">
+         <h2 class="section-title benefits-title">
+            Launch faster. Look professional.<br />
+           <em>Build a portfolio that actually gets you noticed.</em>
+        </h2>
+
+    <div class="benefits-grid">
+      <div class="benefit-tag">
+      <div class="benefit-tag-title">
+        ✦ Go from idea → live portfolio in a single day
+      </div>
+    </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Instantly elevate your developer presence online
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Impress recruiters with a structured, modern UI
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Turn your projects into a story, not just a list
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Save days of design, layout, and decision fatigue
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Just add your work and launch, no setup, no decisions, no stress
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Deploy-ready system - no backend setup needed
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Consistent design system already built for you
+    </div>
+  </div>
+
+  <div class="benefit-tag">
+    <div class="benefit-tag-title">
+      ✦ Stop rebuilding - start shipping your presence
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         WHO IS IT FOR
+    ═══════════════════════════════ -->
+    <div class="for-section">
+      <div class="for-header">
+        <h2 class="section-title">
+          If you're building your online presence,<br /><em
+            >this is for you.</em>
+        </h2>
+      </div>
+      <div class="for-grid">
+        <div class="for-card">
+          <div class="for-card-icon">👩‍💻</div>
+          <div>
+            <h4>Developers building their first serious portfolio</h4>
+            <p>
+              Stop starting from zero. Lumina gives you structure, design, and a
+              system, focus on your work, not layout.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">🧑‍💼</div>
+          <div>
+            <h4>Freelancers who need a client-ready web presence</h4>
+            <p>
+              Services connect to contact. Projects show your range. Everything
+              a client needs to say yes — in one flow.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">🎓</div>
+          <div>
+            <h4>Tech students preparing for job applications</h4>
+            <p>
+              Look more senior than you feel. The project detail pages alone
+              separate you from every other applicant.
+            </p>
+          </div>
+        </div>
+        <div class="for-card">
+          <div class="for-card-icon">😤</div>
+          <div>
+            <h4>Anyone stuck on design, structure, or layout</h4>
+            <p>
+              Decisions already made. Structure already built. Fill in your
+              content and ship. No blank screen paralysis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════
+         MID CTA
+    ═══════════════════════════════ -->
+    <section class="cta-mid">
+      <div class="cta-mid-inner">
+        <h2 class="cta-mid-title">
+          <em>Ready to launch your digital identity?</em>
+        </h2>
+        <p class="cta-mid-sub">
+          Go from idea to live portfolio in just one day.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-primary"
+            >Your Online Identity</a
+          >
+        </div>
+      </div>
+    </section>
+    
+    <!-- ═══════════════════════════════
+         PRICING
+    ═══════════════════════════════ -->
+    <div id="pricing" class="pricing-section">
+      <div class="pricing-bg-glow"></div>
+      <div class="pricing-inner">
+        <h2 class="section-title">
+          One-time purchase.<br /><em>Lifetime portfolio system.</em>
+        </h2>
+         <p class="price-note">
+         No recurring fees. No hidden costs.
+         </p>
+
+          <div class="price-card">
+            <div class="price-card-glow"></div>
+            <div class="price-best-badge">Best value</div>
+            <span class="price-tag-pill">✦ One-Time Purchase</span>
+            <p class="price-note">
+              Pay once. Use forever. No subscriptions.
+            </p>
+             <div class="price-items">
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Complete ReactJS portfolio system (not just a template)
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Structured portfolio architecture with reusable components
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Project system with categories + detailed case study flow
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Services → Contact conversion system (built for clients)
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Fully responsive design across all devices
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Light & dark mode with eye-friendly purple theme
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    SEO-ready structure with unique pages + meta tags (React Helmet)
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Config-based content system — edit content, not components
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Dynamic project detail pages (preview → challenge → solution)
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Pre-built pages: Projects, Services, About, Testimonials
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    CV download + centralized social identity system
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Contact form with validation + user feedback system
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Step-by-step documentation (setup + customization guide)
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Clean routing system with optimized page structure
+  </div>
+
+  <div class="price-item">
+    <span class="check">✓</span>
+    Production-ready setup with deployment support (Vercel / Netlify)
+  </div>
+
+</div>
+
+            
+            <a
+              href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+              target="_blank"
+              class="btn-buy"
+              >Launch Your Portfolio</a
+            >
+            <p class="price-guarantee">
+              🔒 Secure checkout via Gumroad · Instant download after
+              purchase<br />
+              📄
+              <a
+                href="https://www.linkedin.com/pulse/lighting-way-developers-inside-lumina-new-kind-portfolio-wilcox-zwige/?trackingId=ChqsGk8XRICPoiimAweCMg%3D%3D"
+                target="_blank"
+                >Read a real developer's full review on LinkedIn →</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ═══════════════════════════════
+         FAQ
+    ═══════════════════════════════ -->
+    <div id="faq" class="faq-section">
+      <div class="faq-header">
+        <h2 class="section-title">FAQ</h2>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do I need to know React to use Lumina?</div>
+        <p class="faq-a">
+          Basic JavaScript knowledge is enough. All content lives in config
+          files, no touching React components to customize text, images,
+          colors, or links.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I use Lumina for a freelance clients?</div>
+        <p class="faq-a">
+          Yes — the license covers one personal or one client project. For
+          multiple clients, purchase additional licenses.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How does the contact form work?</div>
+        <p class="faq-a">
+          Full validation with success/error feedback. Connect Formspree or
+          EmailJS to send real emails — instructions included in the docs.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do I deploy it?</div>
+        <p class="faq-a">
+          Deploy to Vercel or Netlify in minutes. Step-by-step guides for both
+          platforms are in the documentation.
+        </p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is support included?</div>
+        <p class="faq-a">
+          Yes — email support for installation help and usage questions.
+          Response within 24–48 hours on business days.
+        </p>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════
+         FINAL CTA
+    ═══════════════════════════════ -->
+    <div class="cta-final">
+      <div class="cta-watermark">LUMINA</div>
+      <div class="cta-inner">
+        <h2>
+          Your work deserves<br />more than a layout.<br /><em
+            >It deserves a system.</em
+          >
+        </h2>
+        <p>
+          Stop putting it off. Lumina is ready. Your next opportunity could come
+          from the portfolio you haven't shipped yet.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+            target="_blank"
+            class="btn-primary"
+            >Launch Your Portfolio</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════
+         FOOTER
+    ═══════════════════════════════ -->
+    <footer>
+      <div class="footer-logo">
+        <img src="logo.webp" alt="Lumina" />
+      </div>
+      <p class="footer-copy">
+        © 2026 Lumina by Sobia Soomro. All rights reserved.
+      </p>
+      <div class="footer-links">
+        <a
+          href="https://react-portfolio-template-indol.vercel.app/"
+          target="_blank"
+          >Live Demo</a
+        >
+        <a
+          href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
+          target="_blank"
+          >Buy Now</a
+        >
+        <a href="mailto:sobiasoomro97@gmail.com">Support</a>
+      </div>
+    </footer>
+  </body>
+</html>
