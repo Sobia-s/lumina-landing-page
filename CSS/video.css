@@ -1,0 +1,41 @@
+/* ===========================
+   VIDEO SECTION
+=========================== */
+.video-section {
+  background: var(--surface);
+  border-top: 1px solid var(--section-border);
+  border-bottom: 1px solid var(--section-border);
+  padding: 5rem 4rem;
+}
+.video-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.video-inner .section-desc {
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.video-box-label {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--lavender);
+  margin-bottom: 0.75rem;
+  display: block;
+  text-align: left;
+  font-family: "DM Mono", monospace;
+  letter-spacing: 0.06em;
+}
+.video-box video {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--section-border);
+  background: var(--surface2);
+}

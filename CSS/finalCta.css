@@ -1,0 +1,50 @@
+/* ===========================
+   CTA FINAL
+=========================== */
+.cta-final {
+  padding: 8rem 4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-watermark {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  font-size: 18vw;
+  font-weight: 900;
+  color: rgba(139, 111, 212, 0.04);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: -0.04em;
+}
+.cta-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.cta-final h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.2rem;
+  color: var(--white);
+}
+.cta-final h2 em {
+  font-style: italic;
+  background: linear-gradient(135deg, var(--glow), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.cta-final p {
+  font-size: 1rem;
+  color: var(--dim);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}

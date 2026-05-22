@@ -1,0 +1,30 @@
+footer {
+  padding: 1rem 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1025;
+}
+.footer-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--dim);
+}
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+.footer-links a {
+  font-size: 0.78rem;
+  color: var(--dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: var(--white);
+}

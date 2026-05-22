@@ -1,0 +1,64 @@
+/* ===========================
+   NAV
+=========================== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  padding: 0.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  backdrop-filter: blur(24px);
+  background: rgba(11, 8, 21, 0.8);
+  background: #1a1025;
+  border-bottom: 1px solid rgba(139, 111, 212, 0.12);
+}
+
+.nav-logo img {
+  height: 70px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+.nav-links a {
+  color: var(--dim);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: var(--white);
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--violet), var(--lavender));
+  color: #f8f6ff;
+  padding: 0.55rem 1.4rem;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  flex-shrink: 0;
+}
+.nav-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(139, 111, 212, 0.45);
+}
