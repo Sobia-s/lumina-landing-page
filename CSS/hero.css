@@ -61,28 +61,6 @@
   max-width: 900px;
 }
 
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: rgba(139, 111, 212, 0.12);
-  border: 1px solid rgba(139, 111, 212, 0.28);
-  padding: 0.38rem 1.1rem;
-  border-radius: 100px;
-  font-family: "DM Mono", monospace;
-  font-size: 0.78rem;
-  color: var(--glow);
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
-  animation: riseIn 0.8s ease both;
-}
-.hero-eyebrow .dot {
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-  animation: blink 2s infinite;
-}
 @keyframes blink {
   0%,
   100% {
@@ -114,6 +92,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: var(--lavender);
 }
 
 .hero-sub {
