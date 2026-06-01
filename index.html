@@ -1,77 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
 
-   <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYLFMB7GM7"></script>
-   <script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYLFMB7GM7"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-YYLFMB7GM7');
-   </script>
+  </script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Lumina: Complete Portfolio System</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina: Complete Portfolio System</title>
 
-  <meta
-  name="description"
-  content="A complete portfolio system for anyone building a digital presence. Designed for first-time builders, freelancers, students, developers, and data scientists. Launch a production-ready portfolio without design or setup stress."
-/>
+  <meta name="description" content="A complete portfolio system for anyone building a digital presence. Designed for first-time builders, freelancers, students, developers, and data scientists. Launch a production-ready portfolio without design or setup stress." />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Lumina: Complete Portfolio System" />
-  <meta
-    property="og:description"
-    content="Go live with a professional portfolio in a single day. No design stress. No setup chaos."
-  />
-
-  <meta
-   property="og:image"
-   content="https://lumina-portfolio-system.vercel.app/Images/logo-dark.png"
- />
-
+  <meta property="og:description" content="Go live with a professional portfolio in a single day. No design stress. No setup chaos." />
+  <meta property="og:image" content="https://lumina-portfolio-system.vercel.app/Images/logo-dark.png" />
   <meta property="og:url" content="https://lumina-portfolio-system.vercel.app" />
   <meta property="og:site_name" content="Lumina" />
-
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Lumina: Complete Portfolio System" />
-  <meta
-   name="twitter:description"
-   content="A production-ready React portfolio system designed to help developers launch faster."
-/>
+  <meta name="twitter:description" content="A production-ready React portfolio system designed to help developers launch faster." />
+  <meta name="twitter:image" content="https://lumina-portfolio-system.vercel.app/Images/logo-dark.png" />
 
-<meta
-  name="twitter:image"
-  content="https://lumina-portfolio-system.vercel.app/Images/logo-dark.png"
-/>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Images/logo.ico" />
 
-<!-- Browser tab logo -->
-    <link rel="icon" type="image/x-icon" href="Images/logo.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="CSS/base.css" />
-    <link rel="stylesheet" href="CSS/nav.css" />
-    <link rel="stylesheet" href="CSS/hero.css" />
-    <link rel="stylesheet" href="CSS/video.css" />
-    <link rel="stylesheet" href="CSS/testimonials.css" />
-    <link rel="stylesheet" href="CSS/benefits.css" />
-    <link rel="stylesheet" href="CSS/pricing.css" />
-    <link rel="stylesheet" href="CSS/faq.css" />
-    <link rel="stylesheet" href="CSS/finalCta.css" />
-    <link rel="stylesheet" href="CSS/cta.css" />
-    <link rel="stylesheet" href="CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/responsive.css" />
-  </head>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/base.css" />
+  <link rel="stylesheet" href="CSS/nav.css" />
+  <link rel="stylesheet" href="CSS/hero.css" />
+  <link rel="stylesheet" href="CSS/video.css" />
+  <link rel="stylesheet" href="CSS/testimonials.css" />
+  <link rel="stylesheet" href="CSS/cta.css" />
+  <link rel="stylesheet" href="CSS/benefits.css" />
+  <link rel="stylesheet" href="CSS/pricing.css" />
+  <link rel="stylesheet" href="CSS/faq.css" />
+  <link rel="stylesheet" href="CSS/finalCta.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+
+</head>
 
   <body>
     <!-- ═══════════════════════════════
@@ -102,6 +83,24 @@
   >
     Launch Your Portfolio
   </a>
+  <!-- Hamburger button — add inside <nav> after .nav-cta -->
+<button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<!-- Mobile overlay — add right after </nav> -->
+<div class="nav-mobile-menu" id="mobileMenu">
+  <div class="mobile-close" onclick="closeMobileMenu()">✕</div>
+  <a href="#video" onclick="closeMobileMenu()">Demo</a>
+  <a href="#testimonials" onclick="closeMobileMenu()">Reviews</a>
+  <a href="#pricing" onclick="closeMobileMenu()">Pricing</a>
+  <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+  <a href="https://react-portfolio-template-indol.vercel.app/" target="_blank">Live Demo</a>
+  <a href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template" target="_blank" class="nav-cta-mobile">Get Instant Access</a>
+</div>
+<div class="menu-overlay" id="menuOverlay"></div>
 </nav>
 
     <!-- ═══════════════════════════════
@@ -585,5 +584,25 @@
         >
       </div>
     </footer>
+
+    <script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const menuOverlay = document.getElementById("menuOverlay");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    mobileMenu.classList.toggle("open");
+    menuOverlay.classList.toggle("show");
+  });
+
+  function closeMobileMenu() {
+    hamburger.classList.remove("open");
+    mobileMenu.classList.remove("open");
+    menuOverlay.classList.remove("show");
+  }
+
+  menuOverlay.addEventListener("click", closeMobileMenu);
+</script>
   </body>
 </html>

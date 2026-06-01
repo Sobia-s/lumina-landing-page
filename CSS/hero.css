@@ -1,6 +1,25 @@
-/* ===========================
-   HERO
-=========================== */
+/* ================================================
+   HERO.CSS
+================================================ */
+
+/* ── KEYFRAMES ── */
+@keyframes drift {
+  0%,100% { transform: translate(0, 0); }
+  33%      { transform: translate(20px, -25px); }
+  66%      { transform: translate(-15px, 15px); }
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50%     { opacity: 0.4; transform: scale(1.4); }
+}
+
+/* ── SECTION ── */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -12,70 +31,43 @@
   overflow: hidden;
 }
 
+/* ── ORBS ── */
 .hero-bg-orb {
   position: absolute;
   border-radius: 50%;
   pointer-events: none;
   animation: drift 12s ease-in-out infinite;
 }
+
 .orb-a {
   width: 700px;
   height: 700px;
   top: -200px;
   left: -180px;
-  background: radial-gradient(
-    circle,
-    rgba(139, 111, 212, 0.18) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(139, 111, 212, 0.18) 0%, transparent 70%);
 }
+
 .orb-b {
   width: 500px;
   height: 500px;
   bottom: -150px;
   right: -100px;
-  background: radial-gradient(
-    circle,
-    rgba(232, 121, 160, 0.12) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(232, 121, 160, 0.12) 0%, transparent 70%);
   animation-delay: -5s;
   animation-direction: reverse;
 }
-@keyframes drift {
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-  33% {
-    transform: translate(20px, -25px);
-  }
-  66% {
-    transform: translate(-15px, 15px);
-  }
-}
 
+/* ── INNER ── */
 .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 860px;
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.4;
-    transform: scale(1.4);
-  }
-}
-
+/* ── H1 ── */
 .hero h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(3rem, 7.5vw, 5.5rem);
+  font-size: 5.5rem;
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -83,18 +75,20 @@
   color: var(--white);
   animation: riseIn 0.8s ease 0.1s both;
 }
+
 .hero h1 .line2 {
   display: block;
 }
+
 .hero h1 em {
   font-style: italic;
   background: linear-gradient(135deg, var(--glow) 20%, var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: var(--lavender);
 }
 
+/* ── SUBHEADING ── */
 .hero-sub {
   font-size: 1.1rem;
   font-weight: 300;
@@ -104,11 +98,13 @@
   line-height: 1.8;
   animation: riseIn 0.8s ease 0.2s both;
 }
+
 .hero-sub strong {
   color: var(--white);
   font-weight: 500;
 }
 
+/* ── BUTTONS ── */
 .hero-actions {
   display: flex;
   gap: 1rem;
@@ -125,13 +121,14 @@
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  border: none;
+  cursor: pointer;
 }
+
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 18px 44px rgba(139, 111, 212, 0.5);
@@ -149,20 +146,43 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
+
 .btn-ghost:hover {
   border-color: var(--lavender);
   color: var(--white);
   background: rgba(139, 111, 212, 0.08);
 }
 
-@keyframes riseIn {
-  from {
-    opacity: 0;
-    transform: translateY(28px);
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero {
+    padding: 7rem 2rem 5rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    width: 100%;
+    justify-content: center;
   }
 }

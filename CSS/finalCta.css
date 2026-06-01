@@ -1,12 +1,15 @@
-/* ===========================
-   CTA FINAL
-=========================== */
+/* ================================================
+   FINALCTA.CSS
+================================================ */
+
 .cta-final {
   padding: 8rem 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
+
+/* LUMINA watermark */
 .cta-watermark {
   position: absolute;
   font-family: "Playfair Display", serif;
@@ -19,22 +22,26 @@
   white-space: nowrap;
   pointer-events: none;
   letter-spacing: -0.04em;
+  user-select: none;
 }
+
 .cta-inner {
   position: relative;
   z-index: 2;
   max-width: 680px;
   margin: 0 auto;
 }
+
 .cta-final h2 {
   font-family: "Playfair Display", serif;
-  font-size: 2.7rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin-bottom: 1.2rem;
   color: var(--white);
 }
+
 .cta-final h2 em {
   font-style: italic;
   background: linear-gradient(135deg, var(--glow), var(--accent));
@@ -42,9 +49,41 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .cta-final p {
   font-size: 1rem;
   color: var(--dim);
   margin-bottom: 2.5rem;
   line-height: 1.8;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .cta-final {
+    padding: 6rem 2rem;
+  }
+
+  .cta-final h2 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-watermark {
+    display: none;
+  }
+
+  .cta-final h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-final .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-final .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
 }
