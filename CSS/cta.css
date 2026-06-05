@@ -1,13 +1,8 @@
-/* ================================================
-   CTA.CSS — mid-page CTA strip
-================================================ */
-
 .cta-mid {
-  background: var(--surface);
-  border-top: 1px solid var(--section-border);
-  border-bottom: 1px solid var(--section-border);
-  padding: 4rem;
+  padding: 5rem;
   text-align: center;
+  background: rgba(199, 80, 255, 0.1);
+  border-top: 1px solid rgba(109, 74, 255, 0.1);
 }
 
 .cta-mid-inner {
@@ -17,10 +12,10 @@
 
 .cta-mid-title {
   font-family: "Playfair Display", serif;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.5px;
   margin-bottom: 0.8rem;
   color: var(--white);
 }
@@ -39,7 +34,6 @@
 
 /* Reuse btn-primary from hero.css — no redeclaration needed */
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .cta-mid {
     padding: 3.5rem 2rem;

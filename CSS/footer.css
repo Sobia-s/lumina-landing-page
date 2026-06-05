@@ -1,10 +1,12 @@
 footer {
-  padding: 2rem 4rem;
+  padding: 0.5rem 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  background: #261638;
+  border-top: 1px solid rgba(155, 123, 255, 0.15);
 }
 
 /* Logo */
@@ -18,12 +20,11 @@ footer {
 }
 
 .footer-logo img {
-  height: 28px;
+  height: 3rem;
   width: auto;
   display: block;
 }
 
-/* Copy */
 .footer-copy {
   font-size: 0.78rem;
   color: var(--dimmer);
@@ -38,7 +39,6 @@ footer {
   color: var(--glow);
 }
 
-/* Links */
 .footer-links {
   display: flex;
   gap: 2rem;

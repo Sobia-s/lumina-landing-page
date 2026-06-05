@@ -1,10 +1,10 @@
-/* ================================================
-   FAQ.CSS
-================================================ */
-
 .faq-section {
-  padding: 6rem 4rem;
-  max-width: 740px;
+  padding: 4rem;
+  background: rgba(199, 80, 255, 0.1);
+}
+
+.faq-inner-section{
+  max-width: 780px;
   margin: 0 auto;
 }
 
@@ -15,7 +15,7 @@
 
 .faq-header .section-title {
   font-family: "Playfair Display", serif;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
@@ -23,13 +23,11 @@
   margin-bottom: 0;
 }
 
-/* ── ITEM ── */
 .faq-item {
   border-bottom: 1px solid var(--faq-border);
   padding: 1.6rem 0;
 }
 
-/* ── QUESTION ── */
 .faq-q {
   font-size: 0.95rem;
   font-weight: 500;
@@ -56,15 +54,13 @@
   margin-top: 0.15rem;
 }
 
-/* ── ANSWER ── */
 .faq-a {
-  font-size: 0.86rem;
-  color: var(--dimmer);
+  font-size: 0.95rem;
+  color: var(--dim);
   line-height: 1.8;
   padding-left: 1.9rem;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .faq-section {
     padding: 5rem 2rem;

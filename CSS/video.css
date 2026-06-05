@@ -1,12 +1,6 @@
-/* ================================================
-   VIDEO.CSS
-================================================ */
-
 .video-section {
-  background: var(--surface);
-  border-top: 1px solid var(--section-border);
-  border-bottom: 1px solid var(--section-border);
   padding: 5rem 4rem;
+  background: rgba(199, 80, 255, 0.1);
 }
 
 .video-inner {
@@ -15,13 +9,12 @@
   text-align: center;
 }
 
-/* Section title shared style scoped here */
 .video-inner .section-title {
   font-family: "Playfair Display", serif;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
   margin-bottom: 2.5rem;
   color: var(--white);
 }
@@ -31,7 +24,6 @@
   color: var(--lavender);
 }
 
-/* Grid */
 .video-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -39,7 +31,6 @@
   margin-top: 2rem;
 }
 
-/* Label */
 .video-box-label {
   font-size: 0.82rem;
   font-weight: 500;
@@ -51,7 +42,6 @@
   letter-spacing: 0.06em;
 }
 
-/* Video element */
 .video-box video {
   width: 100%;
   border-radius: 12px;
@@ -60,7 +50,6 @@
   display: block;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .video-section {
     padding: 4rem 2rem;
