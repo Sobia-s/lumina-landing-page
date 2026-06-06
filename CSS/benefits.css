@@ -17,10 +17,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.28) saturate(0.4);
+  filter: brightness(0.30) saturate(0.4);
 }
 
-.benefits-overlay-tint {
+/* .benefits-overlay-tint {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -28,6 +28,17 @@
     rgba(11, 8, 21, 0.90) 0%,
     rgba(74, 46, 122, 0.59) 40%,
     rgba(11, 8, 21, 0.88) 100%
+  );
+} */
+
+.benefits-overlay-tint {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 8, 21, 0.50) 0%,
+    rgba(74, 46, 122, 0.59) 40%,
+    rgba(11, 8, 21, 0.50) 100%
   );
 }
 
@@ -47,13 +58,13 @@
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 0.1px;
-  color: #f8f6ff;
+  color: var(--white);
   margin-bottom: 2.5rem;
 }
 
 .benefits-title em {
   font-style: italic;
-  color: var(--glow);
+  color: var(--lavender);
 }
 
 .benefits-grid {
@@ -63,13 +74,13 @@
   text-align: left;
 }
 
-.benefit-tag {
+/* .benefit-tag {
   background: rgba(139, 111, 212, 0.13);
   border: 1px solid rgba(139, 111, 212, 0.28);
   border-radius: 12px;
   padding: 1.2rem 1.4rem;
   backdrop-filter: blur(8px);
-  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  transition: border-color 0.25s ease, background 0.25s ease;
 }
 
 .benefit-tag:hover {
@@ -79,10 +90,34 @@
 }
 
 .benefit-tag-title {
-  font-size: 0.88rem;
+  font-size: 0.90rem;
   font-weight: 500;
-  color: #f8f6ff;
-  line-height: 1.5;
+  color: var(--white);
+  line-height: 1.7;
+} */
+
+
+.benefit-tag {
+  background: rgba(139, 80, 255, 0.1);
+  border: 1px solid rgba(155, 123, 255, 0.25);
+  border-radius: 22px;
+  padding: 1.2rem 1.4rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.benefit-tag:hover {
+ border-color: rgba(155, 123, 255, 0.38);
+  background: rgba(109, 74, 255, 0.09);
+  cursor: pointer;
+}
+
+.benefit-tag-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--btn-text);
+  line-height: 1.7;
 }
 
 @media (max-width: 900px) {
