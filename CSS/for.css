@@ -1,7 +1,7 @@
 .for-section {
   padding: 6rem 4rem;
-  background: rgba(199, 80, 255, 0.1);
   position: relative;
+  background: rgba(199, 80, 255, 0.1);
 }
 
 .for-inner-section {
@@ -14,13 +14,24 @@
   margin-bottom: 3.5rem;
 }
 
+.for-header .for-label {
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--lavender);
+  margin-bottom: 1rem;
+  display: block;
+}
+
 .for-header .section-title {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.4;
-  letter-spacing: 0.1px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   color: var(--white);
+  margin-bottom: 0;
 }
 
 .for-header .section-title em {
@@ -28,64 +39,98 @@
   color: var(--lavender);
 }
 
-/* GRID */
 .for-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.4rem;
+  gap: 2rem;
 }
 
-/* CARD (more premium glass style) */
 .for-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(202, 187, 254, 0.15);
-  border-radius: 16px;
-  padding: 1.8rem;
-
-  transition: all 0.3s ease;
+  background: var(--card-bg);
+  border: 1px solid rgba(139, 111, 212, 0.35);
+  border-radius: 22px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  gap: 1.3rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-/* soft hover glow */
-.for-card::before {
+.for-card::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    400px circle at var(--x, 50%) var(--y, 50%),
-    rgba(109, 74, 255, 0.12),
-    transparent 60%
-  );
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--lavender), transparent);
   opacity: 0;
   transition: opacity 0.3s ease;
-}
-
-.for-card:hover::before {
-  opacity: 1;
 }
 
 .for-card:hover {
   transform: translateY(-4px);
   border-color: rgba(155, 123, 255, 0.35);
+  background: rgba(199, 80, 255, 0.1);
 }
 
-/* TEXT */
-.for-card h4 {
-  font-size: 0.95rem;
-  font-weight: 500;
+.for-card:hover::after {
+  opacity: 1;
+}
+
+.for-card-icon {
+  font-family: "DM Mono", monospace;
+  font-size: 0.9rem;
   color: var(--white);
-  margin-bottom: 0.5rem;
+  /* background: rgba(109, 74, 255, 0.4); */
+  background: linear-gradient(135deg, var(--violet), var(--lavender));
+  border: 1px solid rgba(109, 74, 255, 0.2);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+  transition: background 0.3s, border-color 0.5s;
 }
 
-.for-card p {
-  font-size: 0.85rem;
+.for-card:hover {
+  background: rgba(109, 74, 255, 0.10);
+  border-color: rgba(155, 123, 255, 0.4);
+}
+
+.for-card-body h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--btn-text);
+  margin-bottom: 0.8rem;
+  line-height: 1.3;
+}
+
+.for-card-body p {
+  font-size: 0.95rem;
   color: var(--dim);
   line-height: 1.7;
 }
 
-/* RESPONSIVE */
+/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .benefits-content {
+    padding: 4rem 2rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits-title {
+    font-size: 2.2rem;
+  }
+
   .for-section {
     padding: 5rem 2rem;
   }
@@ -100,7 +145,24 @@
 }
 
 @media (max-width: 600px) {
+  .benefits-overlay {
+    min-height: auto;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-title {
+    font-size: 1.9rem;
+  }
+
   .for-header .section-title {
     font-size: 1.9rem;
+  }
+
+  .for-card {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }

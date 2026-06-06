@@ -1,52 +1,66 @@
 .cta-mid {
-  padding: 5rem;
+  padding: 5rem 4rem;
   text-align: center;
   background: rgba(199, 80, 255, 0.1);
-  border-top: 1px solid rgba(109, 74, 255, 0.1);
+  border-top: 1px solid rgba(109, 74, 255, 0.18);
+  position: relative;
+  overflow: hidden;
 }
 
 .cta-mid-inner {
+  position: relative;
+  z-index: 2;
   max-width: 680px;
   margin: 0 auto;
 }
 
-.cta-mid-title {
+.cta-mid-label {
+  font-family: "DM Mono", monospace;
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.cta-mid-inner .section-title {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.8rem;
-  color: var(--white);
-}
-
-.cta-mid-title em {
-  font-style: italic;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  margin-bottom: 1rem;
   color: var(--lavender);
 }
 
 .cta-mid-sub {
-  font-size: 1rem;
-  color: var(--dim);
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 2.5rem;
   line-height: 1.7;
+  max-width: 530px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* Reuse btn-primary from hero.css — no redeclaration needed */
 
 @media (max-width: 900px) {
   .cta-mid {
-    padding: 3.5rem 2rem;
+    padding: 4.5rem 2rem;
   }
 
-  .cta-mid-title {
-    font-size: 1.9rem;
+  .cta-mid-inner .section-title {
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 600px) {
-  .cta-mid-title {
-    font-size: 1.7rem;
+  .cta-mid-label{
+   font-size: 0.9rem;
+  }
+
+  .cta-mid-inner .section-title {
+    font-size: 1.9rem;
   }
 
   .cta-mid .hero-actions {
@@ -54,8 +68,11 @@
     align-items: center;
   }
 
+  .cta-mid-sub{
+   font-size: 1rem;
+  }
+
   .cta-mid .btn-primary {
-    width: 100%;
     justify-content: center;
   }
 }

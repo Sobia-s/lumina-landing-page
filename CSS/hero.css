@@ -54,7 +54,7 @@
 .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 860px;
+  max-width: 1000px;
 }
 
 .hero h1 {
@@ -136,9 +136,11 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+    max-width: 40rem;
+    line-height: 1.5;
   }
 
   .hero-actions {
@@ -149,5 +151,12 @@
   .btn-primary {
     justify-content: center;
     padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1{
+    font-size: 2rem;
+    line-height: 1.6;
   }
 }

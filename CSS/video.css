@@ -32,9 +32,9 @@
 }
 
 .video-box-label {
-  font-size: 0.82rem;
+  font-size: 0.90rem;
   font-weight: 500;
-  color: var(--lavender);
+  color: var(--white);
   margin-bottom: 0.75rem;
   display: block;
   text-align: left;

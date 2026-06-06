@@ -5,12 +5,9 @@
   --accent: #ff6fae;
   --white: #f8f6ff;
   --btn-text: #ffffff;
-  --dim: rgba(255, 255, 255, 0.68);
-
-  /* --dim: rgba(248, 246, 255, 0.45); */
+  --dim: rgba(255, 255, 255, 0.90);
   /* --dimmer: rgba(248, 248, 248, 0.22); */
   --card-bg: rgba(255, 255, 255, 0.03);
-  /* --card-border: #cabbfe; */
   --card-border: rgba(109, 74, 255, 0.3);
   --section-border: rgba(139, 111, 212, 0.08);
   --faq-border: rgba(255, 255, 255, 0.06);
