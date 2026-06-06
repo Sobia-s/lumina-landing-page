@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 4rem;
+  padding: 5rem;
   background: rgba(199, 80, 255, 0.1);
 }
 
@@ -63,7 +63,7 @@
 
 @media (max-width: 900px) {
   .faq-section {
-    padding: 5rem 2rem;
+    padding: 6.5rem 2rem;
   }
 
   .faq-header .section-title {
