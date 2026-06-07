@@ -141,17 +141,23 @@
         <div class="video-grid">
           <div class="video-box">
             <p class="video-box-label">🌞 Light Mode</p>
-            <video controls>
-              <source src="Videos/light-mode.mp4" type="video/mp4" />
-              Your browser does not support video.
-            </video>
+          <video
+            controls
+            preload="metadata"
+            poster="Images/light-preview.png"
+         >
+         <source src="Videos/light-mode.mp4" type="video/mp4" />
+        </video>
           </div>
           <div class="video-box">
             <p class="video-box-label">🌙 Dark Mode</p>
-            <video controls>
-              <source src="Videos/dark-mode.mp4" type="video/mp4" />
-              Your browser does not support video.
-            </video>
+          <video
+           controls
+           preload="metadata"
+           poster="Images/dark-preview.png"
+         >
+         <source src="Videos/dark-mode.mp4" type="video/mp4" />
+        </video>
           </div>
         </div>
       </div>
