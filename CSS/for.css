@@ -14,22 +14,12 @@
   margin-bottom: 3.5rem;
 }
 
-.for-header .for-label {
-  font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--lavender);
-  margin-bottom: 1rem;
-  display: block;
-}
-
 .for-header .section-title {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
   color: var(--white);
   margin-bottom: 0;
 }
@@ -49,42 +39,25 @@
   background: var(--card-bg);
   border: 1px solid rgba(139, 111, 212, 0.35);
   border-radius: 22px;
-  padding: 2.5rem 2rem;
+  padding: 2.3rem 2rem;
   display: flex;
   gap: 1.3rem;
   align-items: flex-start;
-  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
   position: relative;
   overflow: hidden;
-}
-
-.for-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--lavender), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: border-color 0.25s ease, background 0.25s ease;
 }
 
 .for-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(155, 123, 255, 0.35);
-  background: rgba(199, 80, 255, 0.1);
-}
-
-.for-card:hover::after {
-  opacity: 1;
+  border-color: rgba(155, 123, 255, 0.38);
+  background: rgba(109, 74, 255, 0.09);
+  cursor: pointer;
 }
 
 .for-card-icon {
   font-family: "DM Mono", monospace;
   font-size: 0.9rem;
   color: var(--white);
-  /* background: rgba(109, 74, 255, 0.4); */
   background: linear-gradient(135deg, var(--violet), var(--lavender));
   border: 1px solid rgba(109, 74, 255, 0.2);
   border-radius: 10px;
@@ -96,11 +69,6 @@
   flex-shrink: 0;
   letter-spacing: 0.05em;
   transition: background 0.3s, border-color 0.5s;
-}
-
-.for-card:hover {
-  background: rgba(109, 74, 255, 0.10);
-  border-color: rgba(155, 123, 255, 0.4);
 }
 
 .for-card-body h4 {
@@ -117,22 +85,9 @@
   line-height: 1.7;
 }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
-  .benefits-content {
-    padding: 4rem 2rem;
-  }
-
-  .benefits-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .benefits-title {
-    font-size: 2.2rem;
-  }
-
   .for-section {
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
   }
 
   .for-grid {
@@ -145,20 +100,9 @@
 }
 
 @media (max-width: 600px) {
-  .benefits-overlay {
-    min-height: auto;
-  }
-
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .benefits-title {
-    font-size: 1.9rem;
-  }
-
   .for-header .section-title {
     font-size: 1.9rem;
+    line-height: 1.5;
   }
 
   .for-card {

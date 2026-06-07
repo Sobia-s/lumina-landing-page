@@ -17,8 +17,9 @@
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.1px;
   color: var(--white);
   margin-bottom: 0;
 }
@@ -29,9 +30,9 @@
 }
 
 .faq-q {
-  font-size: 0.95rem;
+  font-size: 0.97rem;
   font-weight: 500;
-  color: var(--white);
+  color: var(--btn-text);
   margin-bottom: 0.7rem;
   display: flex;
   gap: 0.8rem;
@@ -41,11 +42,11 @@
 .faq-q::before {
   content: "Q";
   font-family: "DM Mono", monospace;
-  font-size: 0.66rem;
+  font-size: 0.70rem;
   color: var(--lavender);
   background: rgba(139, 111, 212, 0.15);
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -55,7 +56,7 @@
 }
 
 .faq-a {
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   color: var(--dim);
   line-height: 1.8;
   padding-left: 1.9rem;
@@ -63,7 +64,7 @@
 
 @media (max-width: 900px) {
   .faq-section {
-    padding: 6.5rem 2rem;
+    padding: 6rem 2rem;
   }
 
   .faq-header .section-title {
