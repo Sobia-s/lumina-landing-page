@@ -20,18 +20,21 @@ footer {
 }
 
 .footer-copy {
-  font-size: 0.78rem;
-  color: var(--dimmer);
+  font-size: 0.85rem;
+  color: var(--white);
   text-align: center;
 }
 
 .footer-copy a {
-  color: var(--lavender);
+  font-size: 0.85rem;
+  color: var(--glow);
   text-decoration: none;
 }
 
 .footer-copy a:hover {
-  color: var(--glow);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration-color: rgba(155, 123, 255, 0.4);
 }
 
 .footer-links {
