@@ -1,17 +1,37 @@
 @keyframes drift {
-  0%,100% { transform: translate(0, 0); }
-  33%      { transform: translate(20px, -25px); }
-  66%      { transform: translate(-15px, 15px); }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(20px, -25px);
+  }
+  66% {
+    transform: translate(-15px, 15px);
+  }
 }
 
 @keyframes riseIn {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes blink {
-  0%,100% { opacity: 1; transform: scale(1); }
-  50%     { opacity: 0.4; transform: scale(1.4); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
 }
 
 .hero {
@@ -38,7 +58,11 @@
   height: 700px;
   top: -200px;
   left: -180px;
-  background: radial-gradient(circle, rgba(139, 111, 212, 0.18) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(139, 111, 212, 0.18) 0%,
+    transparent 70%
+  );
 }
 
 .orb-b {
@@ -46,7 +70,11 @@
   height: 500px;
   bottom: -150px;
   right: -100px;
-  background: radial-gradient(circle, rgba(232, 121, 160, 0.12) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(232, 121, 160, 0.12) 0%,
+    transparent 70%
+  );
   animation-delay: -5s;
   animation-direction: reverse;
 }
@@ -61,7 +89,7 @@
   font-family: "Playfair Display", serif;
   font-size: 5.3rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: -0.4px;
   margin-bottom: 1.5rem;
   color: var(--white);
@@ -107,7 +135,9 @@
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -155,7 +185,7 @@
 }
 
 @media (max-width: 400px) {
-  .hero h1{
+  .hero h1 {
     font-size: 2.5rem;
     line-height: 1.6;
   }
