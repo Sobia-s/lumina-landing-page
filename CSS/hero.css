@@ -87,9 +87,9 @@
 
 .hero h1 {
   font-family: "Playfair Display", serif;
-  font-size: 5.3rem;
+  font-size: 3.5rem;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: -0.4px;
   margin-bottom: 1.5rem;
   color: var(--white);
@@ -157,7 +157,7 @@
   }
 
   .hero h1 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     line-height: 3.8rem;
   }
 
@@ -168,7 +168,7 @@
 
 @media (max-width: 580px) {
   .hero h1 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     max-width: 40rem;
     line-height: 1.5;
   }
@@ -186,7 +186,7 @@
 
 @media (max-width: 400px) {
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.6;
   }
 }
